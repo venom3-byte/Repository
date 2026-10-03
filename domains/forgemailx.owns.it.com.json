@@ -1,0 +1,15 @@
+{
+  "description": "Private ForgeMail inbound email testing service. Receives verification/test messages only; no outbound sending or bulk mail.",
+  "domain": "owns.it.com",
+  "subdomain": "forgemailx",
+  "owner": {
+    "repo": "https://github.com/venom3-byte/Repository",
+    "email": "little.salty.brother@emptyinbox.me"
+  },
+  "record": {
+    "MX": [
+      "smtp.catchmail.io"
+    ]
+  },
+  "proxied": false
+}
