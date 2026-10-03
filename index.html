@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Game Asset Studio</title>
+  <meta name="description" content="Browser-first game asset editor and production asset pipeline.">
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <main id="app" style="min-height:100vh;padding:32px;box-sizing:border-box">
+    <h1>Game Asset Studio</h1>
+    <p>Browser-first game asset editor and production asset pipeline.</p>
+    <section aria-label="Editor">
+      <div id="stage" style="min-height:240px;border:1px dashed #888">
+        <canvas id="editorCanvas" width="1024" height="1024"></canvas>
+        <span id="dropHint">Drop an asset here or use Upload.</span>
+      </div>
+      <input id="fileInput" type="file" hidden>
+      <button id="uploadBtn" type="button">Upload</button>
+      <button id="bgBtn" type="button">Remove background</button>
+      <button id="deleteBtn" type="button">Delete</button>
+      <button id="duplicateBtn" type="button">Duplicate</button>
+      <button id="textBtn" type="button">Text</button>
+      <button id="rectBtn" type="button">Rectangle</button>
+      <span id="status">Ready</span>
+      <span id="toast"></span>
+      <span id="zoomLabel">100%</span>
+      <span id="dimensions">1024 × 1024</span>
+      <input id="cw" type="hidden" value="1024"><input id="ch" type="hidden" value="1024">
+      <div id="propsEmpty"></div>
+      <div id="props" class="hidden">
+        <input id="px"><input id="py"><input id="pw"><input id="ph"><input id="prot"><input id="pop">
+        <div id="imageControls">
+          <input id="brightness" type="hidden" value="0"><input id="contrast" type="hidden" value="0">
+          <input id="saturation" type="hidden" value="0"><input id="blur" type="hidden" value="0">
+        </div>
+      </div>
+    </section>
+  </main>
+  <script type="module" src="./app.js"></script>
+</body>
+</html>
