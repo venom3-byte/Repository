@@ -1,0 +1,15 @@
+{
+  "name": "forgemailx",
+  "owner": {
+    "github": "venom3-byte"
+  },
+  "claimedAt": "2026-10-03T09:50:00.000Z",
+  "records": {
+    "MX": [
+      {
+        "priority": 10,
+        "value": "smtp.catchmail.io"
+      }
+    ]
+  }
+}
